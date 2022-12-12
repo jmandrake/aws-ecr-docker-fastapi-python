@@ -10,6 +10,8 @@ lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
 	# pytest
+build:
+	# build container
 deploy:
 	# Deploy the code
 all: install lint test deploy
