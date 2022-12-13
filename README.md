@@ -14,9 +14,18 @@
 ./cli-fire.py wiki --length 10
 ./cli-fire.py wiki --name "Iphone" --length 5
 
+## AWS Elastic Container Repository deployment
+
+1) To deploy your docker container to ECR, first create the repo:
+[https://us-east-1.console.aws.amazon.com/ecr/repositories?region=us-east-1]
+
+2) Create a project in CodeBuild
+[https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1]
+
+
 ## AWS Codebuild error with pull rate limit
 
-You may get an error that looks like this from AWS CodeBuild:
+You may get an error that looks like this from AWS CodeBuild during the Build step:
 
 Step 1/9 : FROM python:3.10.9-slim-buster
 3.10.9-slim-buster: Pulling from library/python
