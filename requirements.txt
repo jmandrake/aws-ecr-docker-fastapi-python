@@ -4,3 +4,6 @@ pytest==7.2.0
 pytest-cov==4.0.0
 black==22.10.0
 fire==0.4.0
+fastapi==0.88.0
+uvicorn==0.20.0
+textblob==0.17.1
