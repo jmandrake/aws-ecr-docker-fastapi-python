@@ -1,3 +1,6 @@
+![test-aws-lambda-fastapi workflow](https://github.com/jmandrake/test-aws-lambda-fastapi/actions/workflows/devops.yml/badge.svg)
+
+
 # test-aws-lambda-fastapi
 
 1. Create virtual environment venv
@@ -59,3 +62,6 @@ phases:
 In this example, the install phase installs the required version of Docker and configures the AWS CLI with the default region. Then, the build phase uses the aws ecr get-login command to authenticate with Amazon Elastic Container Registry (ECR) and pull the Docker image for your project. This allows you to use the docker build and docker push commands in the build phase to build and push your Docker image to ECR.
 
 Keep in mind that you need to replace 012345678901.dkr.ecr.us-east-1.amazonaws.com/my-repository with the actual URL of your ECR repository. You can find this URL in the Amazon ECR console.
+
+
+![test-aws-lambda-fastapi workflow](https://github.com/jmandrake/test-aws-lambda-fastapi/actions/workflows/devops.yml/badge.svg)
