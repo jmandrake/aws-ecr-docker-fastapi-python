@@ -3,6 +3,10 @@
 
 # test-aws-lambda-fastapi
 
+This demo project was done using this video tutorial:
+[Build Real-World AWS Microservices with Python and FastAPI From Zero](https://www.youtube.com/watch?v=SqFFCTNyi88&t=2430s)
+
+
 1. Create virtual environment venv
 2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/__init__.py
 3. Populate the Makefile
@@ -16,11 +20,9 @@
 
 ## AWS Elastic Container Repository deployment
 
-1) To deploy your docker container to ECR, first create the repo:
-[https://us-east-1.console.aws.amazon.com/ecr/repositories?region=us-east-1]
+1) To deploy your docker container to ECR, first create the repo: https://us-east-1.console.aws.amazon.com/ecr/repositories?region=us-east-1
 
-2) Create a project in CodeBuild
-[https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1]
+2) Create a project in CodeBuild: https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1
 
 
 ## AWS Codebuild error with pull rate limit
@@ -44,7 +46,7 @@ make: *** [deploy] Error 1
 ```
 
 This may happen if you had to try to rebuild the project multiple times. Try waiting 6 hours and hit the Retry Build button.
-More info about that error: (https://www.docker.com/increase-rate-limits/)[https://www.docker.com/increase-rate-limits/]
+More info about that error: https://www.docker.com/increase-rate-limits/
 
 Alternatively, you could try to authenticate your docker pull command:
 
