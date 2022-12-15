@@ -76,3 +76,8 @@ Keep in mind that you need to replace 012345678901.dkr.ecr.us-east-1.amazonaws.c
 
 
 ![test-aws-lambda-fastapi workflow](https://github.com/jmandrake/test-aws-lambda-fastapi/actions/workflows/devops.yml/badge.svg)
+
+
+![image](https://user-images.githubusercontent.com/9938598/207751905-5e80d63a-418c-4bbc-8e4f-222a21458bfb.png)
+
+
