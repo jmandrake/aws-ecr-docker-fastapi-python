@@ -1,5 +1,4 @@
-![test-aws-lambda-fastapi workflow](https://github.com/jmandrake/test-aws-lambda-fastapi/actions/workflows/devops.yml/badge.svg)
-
+[![Test](https://github.com/jmandrake/test-aws-ecr-docker-fastapi-python/actions/workflows/devops.yml/badge.svg)](https://github.com/jmandrake/test-aws-ecr-docker-fastapi-python/actions/workflows/devops.yml)
 
 # test-aws-lambda-fastapi
 
