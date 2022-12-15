@@ -77,7 +77,13 @@ Keep in mind that you need to replace 012345678901.dkr.ecr.us-east-1.amazonaws.c
 
 ![test-aws-lambda-fastapi workflow](https://github.com/jmandrake/test-aws-lambda-fastapi/actions/workflows/devops.yml/badge.svg)
 
+### Notes about Devops
+[Key Skills Software Craftsmanship-10 Lessons](https://www.youtube.com/watch?v=qNBr5A0Kzgk)
 
 ![image](https://user-images.githubusercontent.com/9938598/207751905-5e80d63a-418c-4bbc-8e4f-222a21458bfb.png)
+
+![image](https://user-images.githubusercontent.com/9938598/207752059-692d7ef9-bb1c-4d88-b080-0d57e8a30547.png)
+
+![image](https://user-images.githubusercontent.com/9938598/207752804-4e3c9fb9-5787-40f3-ac26-cdba8a9aef86.png)
 
 
