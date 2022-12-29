@@ -13,9 +13,11 @@ This demo project was done using this video tutorial:
 4. Set up Continuous Integration, i.e. check code for issues using Pylint
 ![pylint error](https://user-images.githubusercontent.com/9938598/206826810-69873457-18a1-4aa8-a0b5-ecaa9ef80c60.png)
 5. Build CLI using to test the function using fire: 
+```
 ./cli-fire.py --help
 ./cli-fire.py wiki --length 10
 ./cli-fire.py wiki --name "Iphone" --length 5
+```
 
 ## AWS Elastic Container Repository deployment
 
