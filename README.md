@@ -3,6 +3,7 @@
 # test-aws-lambda-fastapi
 
 This demo project was done using this video tutorial:
+
 [Build Real-World AWS Microservices with Python and FastAPI From Zero](https://www.youtube.com/watch?v=SqFFCTNyi88&t=2430s)
 
 
@@ -21,9 +22,33 @@ This demo project was done using this video tutorial:
 
 ## AWS Elastic Container Repository deployment
 
-1) To deploy your docker container to ECR, first create the repo: https://us-east-1.console.aws.amazon.com/ecr/repositories?region=us-east-1
+1) To deploy your docker container to ECR, first create the repo: 
+- https://us-east-1.console.aws.amazon.com/ecr/repositories?region=us-east-1
+- Use the Push commands for steps on how to push your Docker image to your repository:
+-- Add the AWS CLI commands to your Makefile's deploy step on Github
 
-2) Create a project in CodeBuild: https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1
+2) Create a project in CodeBuild:
+- Doing the deploy step on AWS is easier since your credentials are already set up here
+- https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1
+- Create Build project 
+- Source: Github
+- Select: Repository in my Github account
+- Select Github repository to pull in
+- Check: Rebuild every time a code change is pushed to this repository
+- Operating system: Amazon Linux 2, Standard runtime
+- Check: Priviledged (enable this option for Docker image)
+- Use Buildspec.yml file (copy/paste it from Github)
+- Create Project
+- Click Start Build (This is similar to Github Actions)
+- This should push the image into ECR and start the Build process
+- Now each time you make a change in Github, the changes will get picked up by CodeBuild automatically and trigger a new build
+
+## Testing your Docker image on ECR with a browser
+- Go to AWS App Runner
+- Start Service
+- Select the container you want (Container image URI)
+- Deployment settings: Automatic
+- Congratulations: your REST API Microservice project is now in production!
 
 
 ## AWS Codebuild error with pull rate limit
