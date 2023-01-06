@@ -20,6 +20,20 @@ This demo project was done using this video tutorial:
 ./cli-fire.py wiki --name "Iphone" --length 5
 ```
 
+## AWS Cloud9 Development Environment
+If you're using Cloud9 and cloning your repository from Github, you'll need to generate an ssh key and store it in Github first.
+In Cloud9 at the prompt, use this command to generate the key:
+```
+ssh-keygen -t rsa
+```
+
+Copy the public key you created. It should be saved in /home/ec2-user/.ssh/id_rsa.pub .
+
+Then go to Github > Profile > Account Settings > SSH and GPG keys: New SSH Key
+
+Once it is saved, you should be able to clone the repo from Cloud9.
+
+
 ## AWS Elastic Container Repository deployment
 
 1) To deploy your docker container to ECR, first create the repo: 
