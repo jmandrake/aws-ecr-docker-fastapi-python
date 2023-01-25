@@ -7,7 +7,7 @@ This demo project was done using this video tutorial:
 [Build Real-World AWS Microservices with Python and FastAPI From Zero](https://www.youtube.com/watch?v=SqFFCTNyi88&t=2430s)
 
 
-1. Create virtual environment venv
+1. Create virtual environment venv: python -m venv venv
 2. Create empty files: Makefile, requirements.txt, main.py, Dockerfile, mylib/__init__.py
 3. Populate the Makefile
     - all: install lint test deploy
